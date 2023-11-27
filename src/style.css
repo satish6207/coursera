@@ -1,0 +1,131 @@
+                                                  /* Layout Section */
+
+body{
+  background-color: rgb(234, 237, 237);
+  font-family: sans-serif;
+}
+.container{
+    display: flex;
+    margin-top: 120px;
+  }
+.col1{
+    width: 25rem;
+    margin-left: 5rem;
+}
+.col2{
+    width: 75rem;
+    margin-right: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+                                                  /* Styles Section*/
+
+input[type="checkbox"] {
+    width: 10px;
+    height: 10px;
+    transform: scale(2);
+    margin-right: 10px;
+} 
+dt{
+  margin-bottom: 8px;
+}   
+dt > small {
+  color: #7c7c7c;
+}                                                                  
+.card {
+    width: 22rem;
+    height: 480px;
+    box-sizing: border-box;
+    border: 2px solid #dbd9d9;
+    border-radius: 0.50rem;
+    overflow: hidden;
+    margin: 0 0 0.90rem 0;
+    padding: 5px;
+    background-color: #ffffff;
+    transition: 0.5s;
+  }
+  .card:hover{
+    transform: translateY(7px);
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(174, 173, 173, 0.1);
+}
+.card-img {
+    width: 100%;
+    height: 200px;
+    border: 0 solid #fff;
+    border-radius: 5px;
+  }
+  .card-body {
+    padding: 1rem;
+  }
+  .thumbnail {
+    width: 30px;
+    height: 30px;
+    object-fit: cover; 
+    border: 0 solid #a7a6a6;
+    border-radius: 3px;
+}
+.thumbnail + span {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5px;
+  color: #7c7c7c;
+}
+  .text {
+    margin: 0;
+  }
+  p small {
+    color: #7c7c7c;
+  }
+  i + span {
+    color: #7c7c7c;
+  }
+  svg{
+    color: gold;
+  }
+  .card small:last-child{
+    color: #7c7c7c;
+  }
+ 
+@media (max-width: 900px) {
+    .col1{
+        margin-left: 1rem;
+        width: 18rem;
+    }
+    .card{
+        width: 18rem;
+    }
+    .col2{
+      margin-right: 2rem;
+    }
+}
+@media (min-width: 768px) {
+  .col1 {
+    width: 20%;
+    margin-left: 5%;
+  }
+  .col2 {
+    width: 73%;
+    margin-right:2%;
+  }
+}
+@media (max-width: 600px) {
+  .col1{
+    display: none;
+  }
+  .card{
+    width: 22rem;
+}
+.col2{
+  margin-right: 1rem;
+}
+}
+@media (max-width: 350px) {
+
+  .card{
+    width: 30rem;
+}
+}
+
