@@ -102,7 +102,6 @@ li a:hover{
   padding: 12px 180px 12px 12px; 
 }
  .btn-search {
-
   padding: 8px 10px 13px 10px;
   margin-left: -3px;
   box-sizing: border-box;
@@ -175,6 +174,21 @@ li a:hover{
 .main-text{
   text-align: center; 
   margin-right: 20rem;
+}
+.btn-primary {
+  color: rgb(29, 11, 224);
+  background-color: #fff;
+  border-color: rgb(29, 11, 224);
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 15px 0 15px 5px;
+  display: none;
+}
+#closeButton {
+  position: absolute;
+  top: 10px;
+  right: 20px;
 }
 main {
   background-color: #f3f2f2c0;
@@ -257,7 +271,7 @@ dt > small {
   i + span {
     color: #7c7c7c;
   }
-  svg{
+ .card svg{
     color: gold;
   }
   .card small:last-child{
@@ -312,6 +326,9 @@ dt > small {
 @media (max-width: 600px) {
   .col1{
     display: none;
+  }
+  .btn-primary{
+    display: block;
   }
   .card{
     width: 22rem;

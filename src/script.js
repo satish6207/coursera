@@ -39,3 +39,28 @@ function updateCarousel() {
   const newTransformValue = -currentIndex * 100 + '%';
   document.querySelector('.carousel-inner').style.transform = 'translateX(' + newTransformValue + ')';
 }
+
+function showFilterBar(){
+  console.log("button clicked");
+
+  var filterbar = document.querySelector(".col1");
+  
+    filterbar.style.display = "block";
+    filterbar.style.position = "fixed";
+    filterbar.style.top = "0";
+    filterbar.style.left = "0";
+    filterbar.style.width = "100%";
+    filterbar.style.height = "100%";
+    filterbar.style.backgroundColor = "#f3f2f2c0";
+    filterbar.style.overflow = "scroll";
+
+    var closeButton = document.createElement('button');
+    closeButton.id = 'closeButton';
+    closeButton.textContent = 'X';
+
+    closeButton.addEventListener('click', function () {
+      filterbar.style.display = "none";
+    });
+
+    filterbar.appendChild(closeButton);
+}
