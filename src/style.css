@@ -1,12 +1,183 @@
-                                                  /* Layout Section */
-
+/* Layout Section */
 body{
-  background-color: rgb(234, 237, 237);
+  
   font-family: sans-serif;
+}
+header{
+  width: 100%;
+  background-color: black;
+}
+header ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  margin-top: -15px;
+}
+li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+}
+li a:hover{
+  background-color: #fff;
+  color: #515050;
+}
+.header2 a{
+  text-decoration: none;
+  padding: 0px 15px 0px 0px;
+  color: black;
+}
+.header2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-bottom: 0.5px solid lightslategrey;
+  padding-bottom: 15px;
+  justify-items: center;
+  margin-top: -5px;
+}
+.coursera-brand{
+  color: rgb(29, 11, 224);
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 0px 10px 0px 10px;
+}
+.coursera-brand1{
+  color: rgb(29, 11, 224);
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 0px 10px;
+  text-align: center;
+}
+.branding{
+  display: flex;
+  align-items: center;
+  display: none;
+}
+
+.custom-input-group {
+  display: none;
+  display: flex;
+  max-width: 100%; 
+  width: 99%;
+  margin: 10px;
+}
+
+.custom-form-control {
+  flex: 1;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem 0 0 0.25rem;
+  padding: 0.375rem 0.75rem;
+}
+
+.custom-input-group-text {
+  display: flex;
+  align-items: center;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 0 0.25rem 0.25rem 0;
+  background-color: rgb(29, 11, 224);
+}
+
+.explore-btn, .join {
+  background-color: rgb(29, 11, 224);
+  color: white;
+  font-weight: bold;
+  font-size: .8rem;
+  border: 0px solid rgb(29, 11, 224);
+  padding: 12px 20px 12px 20px;
+  border-radius: 5px;
+}
+.search-bar1 .input {
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  box-sizing: border-box;
+  padding: 12px 180px 12px 12px; 
+}
+ .btn-search {
+
+  padding: 8px 10px 13px 10px;
+  margin-left: -3px;
+  box-sizing: border-box;
+  border: none;
+  background-color: rgb(29, 11, 224);
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.bi-search{
+  color: #fff;
+}
+/* Carousel Section */
+
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  display: flex;
+  min-width: 100%;
+}
+.item-container {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
+  padding: 10px;
+}
+.text-container {
+  flex-grow: 1;
+  font-size: .8rem;
+  font-weight: bolder;
+}
+.carousel-image {
+  margin-right: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(202, 201, 201);
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+/* End Carousel Section  */
+
+.main-text{
+  text-align: center; 
+  margin-right: 20rem;
+}
+main {
+  background-color: #f3f2f2c0;
+  padding: 25px 0px 25px 0px;
 }
 .container{
     display: flex;
-    margin-top: 120px;
   }
 .col1{
     width: 25rem;
@@ -100,6 +271,10 @@ dt > small {
     .col2{
       margin-right: 2rem;
     }
+    .main-text{
+      margin-right: 7rem;
+    }
+  
 }
 @media (min-width: 768px) {
   .col1 {
@@ -110,6 +285,19 @@ dt > small {
     width: 73%;
     margin-right:2%;
   }
+ 
+}
+@media (max-width: 1210px){
+  .header2, header, .carousel {
+    display: none;
+  }
+  .branding{
+    display: block;
+  }
+  .search-bar{
+    display: block;
+  }
+
 }
 @media (max-width: 600px) {
   .col1{
@@ -121,11 +309,17 @@ dt > small {
 .col2{
   margin-right: 1rem;
 }
+.main-text{
+  margin-right: 0;
+}
 }
 @media (max-width: 350px) {
-
   .card{
     width: 30rem;
 }
 }
-
+@media (min-width: 1210px){
+  .custom-input-group {
+    display: none;
+  }
+}
