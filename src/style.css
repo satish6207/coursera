@@ -52,9 +52,13 @@ li a:hover{
   padding: 0px 10px;
   text-align: center;
 }
+.branding svg {
+  margin-right: 10px;
+}
 .branding{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   display: none;
 }
 
@@ -263,7 +267,7 @@ dt > small {
 @media (max-width: 900px) {
     .col1{
         margin-left: 1rem;
-        width: 18rem;
+        width: 20rem;
     }
     .card{
         width: 18rem;
@@ -273,6 +277,9 @@ dt > small {
     }
     .main-text{
       margin-right: 7rem;
+    }
+    .learning {
+      display: none;
     }
   
 }
@@ -296,6 +303,9 @@ dt > small {
   }
   .search-bar{
     display: block;
+  }
+  .learning {
+    display: none;
   }
 
 }
